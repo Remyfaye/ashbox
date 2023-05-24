@@ -60,7 +60,7 @@ contine shopping
         <div className='cart-product-container'>
         {cartItems?.length >=1 && cartItems.map ( (item) => (
 
-                <div className='product'>
+                <div key={item?._id} className='product'>
                 <img alt='dd' src={urlFor(item?.image[0])} className='cart-product-image'/>
 
                 <div className='item-desc'>
