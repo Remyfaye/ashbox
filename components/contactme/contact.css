@@ -1,0 +1,73 @@
+
+
+.contact_container{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    
+    
+}
+.contact_wrapper{
+    background-color: rgb(24, 19, 50);
+    width: 95%;
+    box-shadow: 0 0 12px 2px #333;
+    margin: auto;
+    border-radius: 10px;
+}
+.contact_bottom{
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    /* width: 95%;*/
+    padding: 10px;
+} 
+.contact_bottom input{
+    width: 95%;
+    padding: 10px;
+    margin: 20px 0;
+   
+}
+.contact_bottom textarea{
+    width: 95%;
+    padding: 10px;
+    margin: 20px 0;
+}
+.contact_top{
+    padding: 10px;
+    text-align: justify;
+}
+.contact_top span{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact_top h2{
+    padding: 10px 0;
+    text-transform: capitalize;
+    margin: 10px 0;
+}
+.contact_top h4{
+    padding: 7px 0;
+    text-transform: capitalize;
+    margin: 7px 0;
+}
+.contact_btn{
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/* ----------------------------------media query--------------------------------- */
+@media screen and (min-width:800px){
+    .contact_wrapper{
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 35px;
+    }
+    .contact_bottom{
+        flex: 60%;
+    }
+    .contact_top {
+        flex: 40%;
+    }
+}
