@@ -180,7 +180,7 @@ const Checkout = ({totalPrice, setShowCart,cartItems,itemId}) => {
                {/* </span> */}
       </div>
 
-      <script crossorigin src="..."></script>
+      {/* <script crossorigin src="..."></script> */}
       </>
 
       }

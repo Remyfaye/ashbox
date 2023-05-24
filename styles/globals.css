@@ -168,6 +168,7 @@ margin-top: 45px;
   display: flex;
   justify-content: space-between;
   padding: 50px 40px;
+  text-transform: capitalize;
   background-color: #dcdcdc;
   border-radius: 15px;
   position: relative;
@@ -248,9 +249,16 @@ text-align: end;
 
 }
 .products-heading h2{
-  font-size: 40px;
-  font-weight: 800;
-  color: #713b3b;
+  text-align: center;
+  text-transform: capitalize;
+  border-bottom: 3px solid rgb(58, 48, 48);
+  border-bottom-left-radius:10px;
+  border-bottom-right-radius:10px;
+  /* border-bottom: 50%; */
+  margin-top: 60px;
+  font-size: 30px;
+  padding: 25px 10px 0;
+  color: rgb(61, 44, 44);
 }
 .products-heading p{
   font-size: 16px;
@@ -842,6 +850,7 @@ margin-top: 160px;
     border-bottom-left-radius:10px;
     border-bottom-right-radius:10px;
     font-size: 30px;
+    margin-top: 10px;
     padding: 25px 10px 0;
     color: rgb(61, 44, 44);
   }

@@ -61,7 +61,7 @@ contine shopping
         {cartItems?.length >=1 && cartItems.map ( (item) => (
 
                 <div className='product'>
-                <img src={urlFor(item?.image[0])} className='cart-product-image'/>
+                <img alt='dd' src={urlFor(item?.image[0])} className='cart-product-image'/>
 
                 <div className='item-desc'>
                     <div className='flex top'>
