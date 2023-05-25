@@ -36,6 +36,17 @@ const Index = ({ products, bannerData }: any) => {
           )}
         </div>
 
+        <div className='products-heading'>
+          <h2>top selling kicks  </h2>
+          {/* <p>n ansbak jnskjwjwojk</p> */}
+        </div>
+
+        <div className='products-container'>
+          {products?.slice(25, 30).map(
+            (product: any) => <Product key={product._id} product={product} />
+          )}
+        </div>
+
         <FooterBanner bannerData={bannerData && bannerData[0]} />
 
       </>

@@ -98,12 +98,13 @@ const Checkout = ({totalPrice, setShowCart,cartItems,itemId}) => {
       </div>
 
       <div className="checkout-field">
-        <label>enter the id of product(s):</label>
+        <label>type in the id of product(s) given below:</label>
         <input 
         name='name'
         required 
         placeholder={itemId}
         />
+        <span>{itemId}</span>
       </div>
 
         <label>enter your address  : </label>
