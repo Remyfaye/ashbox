@@ -5,7 +5,8 @@ import Link from 'next/link'
 import React from 'react'
 
 const FooterBanner = ({bannerData:{
-  phone, bottomText, largeText2, email, smallText, midText, product, buttonText, image
+  phone, bottomText, largeText2, email, smallText, midText, 
+  product, buttonText, image
 }}) => {
 
   const { setIsAllProducts,isAllProducts,incQty, qty } = useStateContext()
@@ -28,12 +29,6 @@ const FooterBanner = ({bannerData:{
           {/* <span>phone : {phone}</span> */}
 
         </div>
-          
-        {/* <div className='banner-desc-heading'> 
-          <h2>important Links</h2>
-          <span>{midText}</span>
-        </div> */}
-
 
         <div className='right'>
         

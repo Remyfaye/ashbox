@@ -11,6 +11,7 @@ import { useStateContext } from '../../context/StateContext'
 import { AiFillStar, AiOutlineStar, AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 import { useState } from 'react'
 import Link from 'next/link'
+import AllProductsDisplay from '../../components/AllProductsDisplay'
 
 
 const AllProducts = ({ products, bannerData }) => {
@@ -22,7 +23,7 @@ const AllProducts = ({ products, bannerData }) => {
 
                 <div className='products-container'>
                     {products?.map(
-                        (product) => <Product key={product._id} product={product} />
+                        (product) => <AllProductsDisplay key={product._id} product={product} />
                     )}
                 </div>
 

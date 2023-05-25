@@ -3,6 +3,9 @@
 import Link from 'next/link'
 import React from 'react'
 import {AiOutlineShopping} from 'react-icons/ai'
+import {ImSpinner9} from 'react-icons/im'
+import {GiAutomaticSas} from 'react-icons/gi'
+import {FaShoePrints} from 'react-icons/fa'
 import {Cart} from './'
 import { useStateContext } from '../context/StateContext'
 
@@ -15,8 +18,10 @@ const Navbar = () => {
     <div className='navbar-container'>
 
       <p className='logo'>
-        <Link href='/'>
+        <ImSpinner9 fontSize='25px'/>
+        <Link href='/' style={{left:'30px'}}>
           AshBox
+          
         </Link>
       </p>
 

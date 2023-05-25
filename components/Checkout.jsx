@@ -177,7 +177,8 @@ const Checkout = ({totalPrice, setShowCart,cartItems,itemId}) => {
       <div className='checkout-help'>
       <h3 >need help making purchase? </h3>
             {/* <span>click here to chat with us on whatsapp : */}
-              <a href='https://wa.link/qapar4'> Click here to chat with us on whatsapp </a>
+              <a href='https://wa.link/qapar4'> 
+              Click here to chat with us on whatsapp </a>
                {/* </span> */}
       </div>
 

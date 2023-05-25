@@ -11,29 +11,36 @@ const HeroBanner = ({heroBanner}) => {
 
       <div className='hero-banner-desc'>
 
-          {/* <div className='p'>
-            <h1>{heroBanner.largeText1}</h1>
-          </div> */}
+        <div className='hero-banner-image'>
+        <img src={urlFor(heroBanner.image)} alt='hes' 
+          // width={200}
+          // height={200}
+          // className='hero-banner-image'
+          />
 
-          <div>
+        </div>
+          
+        <div className='bannerr-desc'>
 
           <h3>{heroBanner.midText}</h3><br></br>
           {/* <h5>{heroBanner.smallText}</h5> */}
-          
-          </div>
 
-        <div>
+          <div>
             <Link href={`/allProducts/${heroBanner.buttonText}`}>
             <button type='button' >{heroBanner.buttonText}...</button>
             </Link>
            
         </div>
+          
+        </div>
+
+        
 
 
 
       </div>
 
-      <img src={urlFor(heroBanner.image)} alt='hes' className='hero-banner-image'/>
+     
 
 
       

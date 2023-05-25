@@ -2,13 +2,14 @@
 
 import React from 'react'
 import { client, urlFor } from '../../lib/client'
-import { Product } from '../../components'
+import { AllProductsDisplay, Product } from '../../components'
 import { useStateContext } from '../../context/StateContext'
 
 
 import { AiFillStar, AiOutlineStar, AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai'
 import { useState } from 'react'
 import Link from 'next/link'
+import AllProducts from '../AllProducts'
 
 
 const ProDuctDetails = ({ product, products }) => {
@@ -27,9 +28,11 @@ const ProDuctDetails = ({ product, products }) => {
 
                 <div className='product-detail-desc'>
 
+
                     <h1>{name}</h1>
 
                     <div className='reviews'>
+
                         <div>
                             <AiFillStar />
                             <AiFillStar />
@@ -38,9 +41,12 @@ const ProDuctDetails = ({ product, products }) => {
                             <AiOutlineStar />
 
                         </div>
-                    </div>
 
+                    </div>
                     <p className='price'>#{price}</p>
+
+
+
 
                     {/* <div className='quantity'>
                         <h3>Quantity</h3>
@@ -68,7 +74,7 @@ const ProDuctDetails = ({ product, products }) => {
                 <div className='marquee'>
                     <div className='maylike-products-container track'>
                         {products.map((item) => (
-                            <Product key={item._id} product={item} />
+                            <AllProductsDisplay key={item._id} product={item} />
 
                         ))}
                     </div>

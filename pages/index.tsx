@@ -1,6 +1,6 @@
 
 // import React from 'react'
-import { Product, FooterBanner, HeroBanner, Footer } from '../components'
+import { Product, FooterBanner, HeroBanner, Footer, MoreInfo } from '../components'
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 
 import { client } from '../lib/client'
@@ -12,6 +12,8 @@ const Index = ({ products, bannerData }: any) => {
     <div>
       <>
         <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
+
+        <MoreInfo/>
 
 
         <div className='products-heading'>
@@ -26,7 +28,7 @@ const Index = ({ products, bannerData }: any) => {
         </div>
 
         <div className='products-heading'>
-          <h2>newest arrivals  </h2>
+          <h2>new arrivals  </h2>
           {/* <p>n ansbak jnskjwjwojk</p> */}
         </div>
 
@@ -37,7 +39,7 @@ const Index = ({ products, bannerData }: any) => {
         </div>
 
         <div className='products-heading'>
-          <h2>top selling kicks  </h2>
+          <h2>best sellers  </h2>
           {/* <p>n ansbak jnskjwjwojk</p> */}
         </div>
 
