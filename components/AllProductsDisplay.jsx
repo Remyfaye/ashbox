@@ -17,6 +17,7 @@ const AllProductsDisplay = ({product}) => {
   // console.log(slug.current)
   return (
     <div className='all-product-container'>
+          <Link href={`/product/${product.slug?.current}`}>
           
             <img 
             src={urlFor(product.image && product.image[0])}
@@ -24,18 +25,18 @@ const AllProductsDisplay = ({product}) => {
             height={330}
             className='all-product-image'
             />
+          </Link>
+
           <button type='button' className='all-cart-icon' onClick={() => onAdd(product,qty)}>
               {/* <FcPaid fontSize={35} /> */}
               <BiCartDownload fontSize={35} />
             </button>
 
           <div className='all-product-details'>
-          <Link href={`/product/${product.slug?.current}`}>
 
             <h4 className='all-product-name'>{product.slug?.current}</h4>
             <h4 className='all-product-price'> N{product.price}</h4>
             
-          </Link>
             
           </div>
 
