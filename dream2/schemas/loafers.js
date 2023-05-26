@@ -1,6 +1,8 @@
+
+
 export default {
-    name: 'product',
-    title: 'Product',
+    name: 'loafers',
+    title: 'Loafers',
     type: 'document',
     fields: [
         {
@@ -15,11 +17,6 @@ export default {
         {
             name: 'name',
             title: 'Name',
-            type: 'string',
-        },
-        {
-            name: 'random',
-            title: 'Random',
             type: 'string',
         },
         {

@@ -112,7 +112,7 @@ contine shopping
               
             <div className='total'>
               <h3>Subtotal:</h3>
-              <h3>#{totalPrice}</h3>
+              <h3>#{totalPrice} + dilivery fee</h3>
             </div>
 
            <div className='btn-container'>

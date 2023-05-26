@@ -23,6 +23,8 @@ const Product = ({product}) => {
             />
           </Link>
 
+         
+
           <div className='product-details-container'>
 
             <div className='product-details-wrapper'>

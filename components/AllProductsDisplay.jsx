@@ -4,6 +4,8 @@
 
 import { urlFor } from '@/lib/client'
 import Link from 'next/link'
+import {BiCartDownload} from 'react-icons/bi'
+import {FcPaid} from 'react-icons/fc'
 import {AiOutlineShopping} from 'react-icons/ai'
 import { useStateContext } from '../context/StateContext'
 
@@ -23,7 +25,8 @@ const AllProductsDisplay = ({product}) => {
             className='all-product-image'
             />
           <button type='button' className='all-cart-icon' onClick={() => onAdd(product,qty)}>
-              <AiOutlineShopping fontSize={35} />
+              {/* <FcPaid fontSize={35} /> */}
+              <BiCartDownload fontSize={35} />
             </button>
 
           <div className='all-product-details'>

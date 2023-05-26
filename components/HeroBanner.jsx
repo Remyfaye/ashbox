@@ -19,6 +19,8 @@ const HeroBanner = ({heroBanner}) => {
           />
 
         </div>
+
+        
           
         <div className='bannerr-desc'>
 

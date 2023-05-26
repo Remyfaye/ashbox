@@ -42,9 +42,28 @@ export default {
             type: 'string',
         },
         {
-            name: 'largeText2',
-            title: 'LargeText2',
-            type: 'string',
+            name: 'sneakerImage',
+            title: 'SneakerImage',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        },
+        {
+            name: 'bannerImage',
+            title: 'BannerImage',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
+        },
+        {
+            name: 'dressShoeImage',
+            title: 'DressShoeImage',
+            type: 'image',
+            options: {
+                hotspot: true,
+            },
         },
         {
             name: 'discount',

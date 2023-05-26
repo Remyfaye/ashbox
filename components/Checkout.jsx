@@ -11,7 +11,8 @@ import { AiOutlineLeft, AiOutlineMinus, AiOutlinePlus, AiOutlineShopping } from 
 const Checkout = ({totalPrice, setShowCart,cartItems,itemId}) => {
 
     const publicKey = process.env.NEXT_PUBLIC_LIVE_PUBIC_KEY
-    const amount = totalPrice*100
+    const newTotalPrice = totalPrice+3000
+    const amount = newTotalPrice*100
     const [email, setEmail] = useState("")
     const [name, setName] = useState("")
     const [phone, setPhone] = useState("")
@@ -44,7 +45,7 @@ const Checkout = ({totalPrice, setShowCart,cartItems,itemId}) => {
           phone,
         },
         publicKey:publicKey,
-        text: `Pay N${totalPrice}`,
+        text: `Pay N${newTotalPrice}`,
         onSuccess: () =>
           resetForm(),
         onClose: () => alert("Wait! Don't leave :("),

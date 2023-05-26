@@ -13,7 +13,7 @@ import AllProducts from '../AllProducts'
 
 
 const ProDuctDetails = ({ product, products }) => {
-    const { image, name, details, price } = product
+    const { image, name, details, price, sizes } = product
     const [index, setIndex] = useState(0)
     const { decQty, incQty, qty, qtyProduct, totalQuantities, onAdd } = useStateContext()
     // console.log(products)
@@ -44,6 +44,7 @@ const ProDuctDetails = ({ product, products }) => {
 
                     </div>
                     <p className='price'>#{price}</p>
+                    <small className='price' style={{ color: 'gray' }}>{sizes}</small>
 
 
 
