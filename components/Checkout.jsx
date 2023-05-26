@@ -54,14 +54,14 @@ const Checkout = ({totalPrice, setShowCart,cartItems,itemId}) => {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('service_dbfdb53', 'template_zy7197h',  form.current, 'LftTxcHyL3ufnB-GX')
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
+      // emailjs.sendForm('service_dbfdb53', 'template_zy7197h',  form.current, 'LftTxcHyL3ufnB-GX')
+      //   .then((result) => {
+      //       console.log(result.text);
+      //   }, (error) => {
+      //       console.log(error.text);
+      //   });
   
-        e.target.reset()
+      //   e.target.reset()
 
       setEnterAdress(false)
 
@@ -168,12 +168,13 @@ const Checkout = ({totalPrice, setShowCart,cartItems,itemId}) => {
           />
       </div>
 
+      <PaystackButton className="paystack-button" {...componentProps} />
+
 
       </form>
 
       
 
-      <PaystackButton className="paystack-button" {...componentProps} />
 
       <div className='checkout-help'>
       <h3 >need help making purchase? </h3>

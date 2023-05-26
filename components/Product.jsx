@@ -30,10 +30,10 @@ const Product = ({product}) => {
             <div className='product-details-wrapper'>
 
             <p className='product-name'>
-              {product.slug?.current}
+              {product.name}
             </p>
             <p className='product-price'>
-              N{product.price}
+            &#8358;{product.price}
             </p>
 
             </div>

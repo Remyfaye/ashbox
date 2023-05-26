@@ -34,8 +34,8 @@ const AllProductsDisplay = ({product}) => {
 
           <div className='all-product-details'>
 
-            <h4 className='all-product-name'>{product.slug?.current}</h4>
-            <h4 className='all-product-price'> N{product.price}</h4>
+            <h4 className='all-product-name'>{product.name}</h4>
+            <h4 className='all-product-price'> &#8358;{product.price}</h4>
             
             
           </div>

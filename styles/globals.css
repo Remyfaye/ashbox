@@ -315,11 +315,11 @@ text-align: end;
   font-weight: 200;
 }
 .footer-banner-container{
-  padding: 70px 35px;
-  background-color: #f02d34;
+  padding: 60px 35px;
+  background-color: grey;
   border-radius: 15px;
   position: relative;
-  height: 400px;
+  height: 350px;
   line-height: 1; 
   color: white;
   width: 100%;
@@ -345,6 +345,10 @@ text-align: end;
 .bannerr-desc button{
   animation: wiggle 2s linear infinite;
   
+}
+.bannerr-desc h3{
+    font-family: Righteousness;  
+    font-weight: 600;
 }
 
 .banner-desc-heading{
@@ -812,6 +816,7 @@ margin-top: 160px;
     /* background-color: #0c471c; */
     /* width: 80%; */
     text-transform: capitalize;
+    
   }
 
   .hero-banner-container h1{
@@ -842,10 +847,13 @@ margin-top: 160px;
   .more-info-desc-text h3{
     font-weight: 600;
     font-family: Georgia, Times, 'Times New Roman', serif;
+    /* font-family: Poppins; */
   }
   .more-info-desc-text h4{
     font-weight: 300;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    font-family: Poppins;  
+
   }
  
   .footer-banner-container{
@@ -859,9 +867,10 @@ margin-top: 160px;
     height: 56%
   }
   .banner-desc h3{
-    font-weight: 500;
+    font-weight: 300;
+    font-family: Poppins;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.6;
     margin-left: 1px;
   }
   .banner-desc .left p{
@@ -886,6 +895,7 @@ margin-top: 160px;
   }
   .banner-desc{
     flex-wrap: wrap;
+    text-transform: capitalize;
     /* position: absolute; */
     bottom: 10px;
     width: 85%;
@@ -987,6 +997,10 @@ margin-top: 160px;
     /* opacity: 0.8; */
     /* z-index: 4000; */
   }
+  .product-name{
+    text-transform: capitalize;
+    font-family: Poppins;
+  }
   .new-product-details{
     position: absolute;
     top: 40%;
@@ -1040,6 +1054,8 @@ margin-top: 160px;
   }
   .all-product-details h4{
     font-weight: 900;
+    text-transform: capitalize;
+    font-family:  Poppins;
   }
   .all-cart-icon{
     font-size: 25px;

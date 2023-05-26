@@ -66,7 +66,7 @@ contine shopping
                 <div className='item-desc'>
                     <div className='flex top'>
               <h5>{item?.name}</h5>
-              <h4>#{item?.price}</h4>
+              <h4>&#8358;{item?.price}</h4>
               
 
             </div>
@@ -112,7 +112,7 @@ contine shopping
               
             <div className='total'>
               <h3>Subtotal:</h3>
-              <h3>#{totalPrice} + dilivery fee</h3>
+              <h3>&#8358;{totalPrice} + dilivery fee</h3>
             </div>
 
            <div className='btn-container'>
